@@ -2,6 +2,6 @@
 
 cp .bashrc ~/
 cp .profile ~/
-cp .emacs.d ~/
+cp -rf .emacs.d ~/
 
 echo "Done!"
