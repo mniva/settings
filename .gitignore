@@ -1,0 +1,7 @@
+# OSX
+.DS_Store
+
+# EMACS
+*.emacs.d/
+!.emacs.d/init.el
+!.emacs.d/lisp/
