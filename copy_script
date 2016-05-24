@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cp .bashrc ~/
+cp .profile ~/
+cp .emacs.d ~/
+
+echo "Done!"
