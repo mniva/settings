@@ -1,7 +1,0 @@
-#!/bin/sh
-
-cp .bashrc ~/
-cp .profile ~/
-cp -rf .emacs.d ~/
-
-echo "Done!"
