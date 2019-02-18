@@ -2,7 +2,7 @@
 
 cp ~/.bashrc .bashrc
 cp ~/.profile .profile
-cp -rf ~/.emacs.d/ ./.emacs.d
+cp -rf ~/.emacs.d ./.emacs.d
 
 echo "Set password for ssh.zip"
 cp -rf ~/.ssh .ssh

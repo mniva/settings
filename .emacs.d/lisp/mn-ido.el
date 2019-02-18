@@ -1,9 +1,9 @@
 ;; ido completion for minibuffer
+(require 'ido)
 (ido-mode t)
-(setq ido-save-directory-list-file "~/.emacs.d/ido.last")
-(setq ido-enable-flex-matching t) ; fuzzy matching is a must have
-(setq ido-use-filename-at-point 'guess)
-(setq ido-show-dot-for-dired t)
+(setq ido-save-directory-list-file "~/.emacs.d/ido/ido.last")
+;; (setq ido-enable-flex-matching t) ; fuzzy matching is a must have
+;; (setq ido-use-filename-at-point 'guess)
 
 ;; enable recent files mode.
 (recentf-mode t)
