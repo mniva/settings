@@ -5,3 +5,4 @@
 *.emacs.d/
 !.emacs.d/init.el
 !.emacs.d/lisp/
+config/karabiner/automatic_backups

@@ -3,7 +3,7 @@ echo "Installing settings locally"
 cp .bashrc ~/.bashrc
 cp .zshrc ~/.zshrc
 cp .profile ~/.profile
-cp -rf config/karabiner ~/.config/karabiner
+cp -rf config/karabiner/ ~/.config/
 cp .emacs.d/init.el ~/.emacs.d/init.el
 cp -rf .emacs.d/lisp ~/.emacs.d/lisp
 
