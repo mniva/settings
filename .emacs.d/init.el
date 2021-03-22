@@ -40,8 +40,15 @@
 (require 'mn-generic)
 (require 'mn-face)
 (require 'mn-ido)
+(require 'mn-custom-args)
 
 (kill-buffer "*scratch*")
+
+(defun custom-args (switch)
+  (message "i was passed -magit")
+  )
+
+(add-to-list 'command-switch-alist '("-magit" . custom-args))
 
 ;(server-start)
 (custom-set-variables
@@ -57,3 +64,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+

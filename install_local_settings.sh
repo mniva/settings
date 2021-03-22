@@ -6,7 +6,7 @@ cp .profile ~/.profile
 cp -rf config/karabiner/ ~/.config/
 cp -rf config/vscode/ ~/Library/Application\ Support/Code/User/
 cp .emacs.d/init.el ~/.emacs.d/init.el
-cp -rf .emacs.d/lisp ~/.emacs.d/lisp
+cp -rf .emacs.d/lisp/ ~/.emacs.d/lisp/
 
 echo "unzip ssh"
 unzip ssh.zip
