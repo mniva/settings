@@ -1,0 +1,44 @@
+{
+    "editor.minimap.enabled": true,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "diffEditor.renderSideBySide": false,
+    "window.zoomLevel": -1,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.tabCompletion": "on",
+    "files.autoSave": "off",
+    "material-icon-theme.activeIconPack": "react",
+    "workbench.iconTheme": "vscode-icons",
+    "browser-preview.startUrl": "https://localhost:3000",
+    "editor.suggest.maxVisibleSuggestions": 15,
+    "typescript.suggest.completeFunctionCalls": true,
+    "[svelte]": {},
+    "material-icon-theme.hidesExplorerArrows": false,
+    "svelte.language-server.runtime": "/usr/local/bin/node",
+    "json.maxItemsComputed": 50000,
+    "browser-preview.verbose": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "material-icon-theme.folders.theme": "classic",
+    "prettier.singleQuote": true,
+    "prettier.jsxSingleQuote": true,
+    "javascript.preferences.quoteStyle": "single",
+    "workbench.colorTheme": "Electron",
+    
+    // eslint extension options
+    "eslint.enable": true,    
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.requireConfig": true,
+}
