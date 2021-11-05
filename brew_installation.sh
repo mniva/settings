@@ -10,7 +10,7 @@ else
 fi
 
 # Packages
-brew install ruby emacs node jq fastlane firebase-cli nvm
+brew install ruby emacs node jq fastlane firebase-cli nvm emacs
 
 # Casks
 brew tap homebrew/cask-versions
