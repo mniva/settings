@@ -34,34 +34,11 @@
   :bind (:map markdown-mode-command-map
 	      ("g" . grip-mode)))
 
-
 ;; Own settings
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
-(require 'mn-generic)
-(require 'mn-face)
+(require 'mn-startup-args)
+(require 'mn-style)
 (require 'mn-ido)
-(require 'mn-custom-args)
+(require 'mn-settings)
 
 (kill-buffer "*scratch*")
-
-(defun custom-args (switch)
-  (message "i was passed -magit")
-  )
-
-(add-to-list 'command-switch-alist '("-magit" . custom-args))
-
-;(server-start)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(grip-mode markdown-mode markdown-preview-mode cl-lib-highlight magit use-package)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-
