@@ -14,8 +14,7 @@ brew install ruby emacs node jq fastlane firebase-cli nvm emacs
 
 # Casks
 brew tap homebrew/cask-versions
-brew install alfred dropbox iterm2 karabiner-elements monitorcontrol qlmarkdown sketch firefox-nightly visual-studio-code
+brew install alfred dropbox iterm2 karabiner-elements monitorcontrol firefox-nightly visual-studio-code
 
 # Drivers
 brew tap homebrew/cask-drivers
-brew install logitech-control-center

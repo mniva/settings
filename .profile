@@ -7,15 +7,18 @@ else
     PROMPT='%B%F{green}%1~%b%f $ '
 fi
 
-# EMACS
-export EDITOR=emacs
-export LC_ALL=en_US.UTF-8
-export LANG=en_US.UTF-8
-
 # ITERM
 if [ $ITERM_SESSION_ID ]; then
     export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
 fi
+
+# HOMEBREW
+export BREW=/opt/homebrew/bin
+ 
+# EMACS
+export EDITOR=emacs
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # RUBY repo and install directory
 RUBY=/usr/local/opt/ruby
@@ -29,12 +32,9 @@ GCLOUD=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/
 # source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 # source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
-# SKETCH
-SKETCH=$(mdfind kMDItemCFBundleIdentifier == 'com.bohemiancoding.sketch3' | head -n 1)
-
 ## PATH
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
-PATH=$RUBY/bin:$GEM_HOME/bin:$PYTHON/bin:$GCLOUD/bin:$SKETCH:$PATH
+VENDORS=$BREW:$RUBY/bin:$GEM_HOME/bin:$PYTHON/bin:$GCLOUD/bin:$SKETCH
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:$VENDORS
 export PATH
 
 ## ALIASES
@@ -64,3 +64,4 @@ export ANDROID_NDK_ROOT=$ANDROID_NDK
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 eval "$(rbenv init -)"
+eval "$(/opt/homebrew/bin/brew shellenv)"

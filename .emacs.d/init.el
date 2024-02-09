@@ -36,8 +36,8 @@
 
 ;; Own settings
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
-(require 'mn-startup-args)
-(require 'mn-style)
+(require 'mn-custom-args)
+(require 'mn-face)
 (require 'mn-ido)
 (require 'mn-settings)
 
